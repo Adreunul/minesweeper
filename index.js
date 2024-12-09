@@ -162,7 +162,7 @@ function handleUserLoss(row, col)
     gameInfoContainer.style.marginBottom = '.5rem'; // for not gaining space between "eyes" and game board
     newGameButton.style.marginBottom = '.5rem';
 
-    cell.innerHTML = '<img src="./img/mine.png" style="width:20px;height:20px;">'; //how do you write emojis ? 
+    cell.innerHTML = '<img src="./img/mine.png" class="mine-image">';
     cell.style.backgroundColor = '#fa6e37be';
     gameBoard.style.border = '8px solid #fa6e37be';
 
@@ -177,7 +177,7 @@ async function revealBombs(){
                 const cell = getCell(i, j);
                 cell.classList.add('revealed');
                 cell.disabled = true;
-                cell.innerHTML = '<img src="./img/mine.png" style="width:20px;height:20px;">';
+                cell.innerHTML = '<img src="./img/mine.png" class="mine-image">';
             }
         }
     }
@@ -190,7 +190,7 @@ async function revealWrongFlags(){
                 const cell = getCell(i, j);
                 cell.classList.toggle('flagged');
                 cell.classList.toggle('wrong-flag');
-                cell.innerHTML = '<img src="./img/wrong-flag.png" style="width:20px;height:20px;">';
+                cell.innerHTML = '<img src="./img/wrong-flag.png">';
             }
         }
     }

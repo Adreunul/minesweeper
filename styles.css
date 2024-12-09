@@ -5,6 +5,11 @@
         min-width:15px !important;
         max-width:15px !important;
     }
+
+    .mine-image{
+        width:15px !important;
+        height:15px !important;
+    }
 }
 
 body{
@@ -75,6 +80,11 @@ body{
     align-items: center;
     padding-left:5%;
     padding-top:5%;
+}
+
+.mine-image{
+    width:20px;
+    height:20px;
 }
 
 .game-timer{
