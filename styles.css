@@ -1,0 +1,207 @@
+/* https://colorhunt.co/palette/f3f3e0133e87608bc1cbdceb */
+
+@media(max-width: 500px){
+    .cell{
+        min-width:15px !important;
+        max-width:15px !important;
+    }
+}
+
+body{
+    background-color:#608BC1;
+
+}
+
+
+
+.eyes{
+    border: 3px solid #092b66;
+    border-radius:12.5%;
+    margin-bottom: 2rem;
+}
+
+.container header {
+   
+    top:0;
+    left:0;
+}
+
+.nav {
+    margin: 0;
+    width: 25%;
+    zoom: 1;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+}
+
+
+.ui-buttons-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.new-game-button-container{
+    width:50%;
+}
+
+
+.game-info-container{
+    width:40%;
+    height: 3rem;
+    display:flex;
+    justify-content: space-around;
+
+    background-color:#F3F3E0 !important;
+    color:#133E87  !important;
+    
+    font-size:1rem;
+}
+
+
+.bomb-counter{
+    font-size:.9rem;
+    font-weight: bold;
+    width: 50%;
+    height:100%;
+    text-align: center;
+    padding-top:7.5%;
+}
+
+.bomb-image{
+    width: 1.75rem;
+    height: 75%;
+    align-items: center;
+    padding-left:5%;
+    padding-top:5%;
+}
+
+.game-timer{
+    font-size:.9rem;
+    font-weight: bold;
+    width: 50%;
+    height:100%;
+    text-align: center;
+    padding-top:7.5%;
+}
+
+.clock-image{
+    width: 1.5rem;
+    height: 75%;
+
+    padding-top:5%;
+}
+
+
+.new-game-button{
+    background-color:#F3F3E0 !important;
+    color:#133E87  !important;
+    
+    font-size:1rem;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 75%;
+    height:3rem;
+}
+
+.new-game-button:hover{
+    background-color:#cbdceb !important;
+    color:rgb(43, 115, 182) !important;
+    color: #fa6e37 !important;
+    border: 3px solid #133E87;
+}
+
+.new-game-button:active{
+    background-color:#133E87 !important;
+    color:#F3F3E0 !important;
+    border: 1px solid #F3F3E0;
+    box-shadow: 0 5px #F3F3E0;
+    
+}
+
+.game-container{
+    margin-top:3rem;
+    margin-bottom:3rem;
+    display:flex;
+    height:fit-content;
+    justify-content:center;
+    align-items:center;
+}
+
+.game-frame{
+    width: 75vw;
+    max-width:fit-content;
+    min-width: fit-content;
+    height:fit-content;
+    /* max-height:fit-content; */
+    min-height: fit-content;
+    padding:1.75rem;
+    padding-top:.5rem;
+    border:5px solid #F3F3E0;
+    border-radius:7.5%;
+    background-color: #133E87;
+    overflow: hidden;
+    z-index:1;
+}
+
+.game-board{
+    border:8px solid #092b66;
+    border-radius:5%;
+    z-index: -1;
+}
+
+.cell {
+    width: 2vw; /* Divide the game board width by the number of columns */
+    min-width:22px;
+    max-width:22px;
+    height: 2vw; /* Keep cells square using the same calculation */
+    min-height:22px;
+    max-height:22px;
+    background-color: #F3F3E0;
+    background-color: rgb(197, 234, 252);
+    border: 1px solid #133E87;
+    border-radius: 10%;
+    cursor: pointer;
+    display: flex; /* Center content inside the cell */
+    justify-content: center;
+    align-items: center;
+    font-size: .9rem; /* Initially hide text */
+    z-index: 0;
+}
+
+.cell:active {
+    background-color: #cbdceb; /* Highlight on click */
+}
+
+.flagged{
+    background-color: #fa6e37be;
+    background-color: rgb(9, 43, 102);
+    color: #F3F3E0;
+}
+
+.wrong-flag{
+    background-color:#fa6e37be;
+    color: #092b66;
+}
+
+.revealed{
+    font-weight: bold;
+}
+
+.zero-cell{
+    background-color: #092b66;
+}
+
+
+.game-over-message{
+    text-align: center;
+    margin-bottom: 0;
+    color: #fffaf7;
+    color: #F3F3E0;
+    color: #fa6e37;
+}
+
+.hidden{
+    display:none;
+}
